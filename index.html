@@ -4,78 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Awareness</title>
-    <link rel="stylesheet" href="style.css">
+    <title>EcoLife - Environmental Awareness</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
     <header>
-        <h1>Go Green 🌍</h1>
-        <p>Save Nature, Save Our Future</p>
+        <h1>🌍 EcoLife</h1>
+        <p>Small Steps, Big Change!</p>
+        <button id="themeBtn">🌙 Change Theme</button>
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#tips">Eco Tips</a>
-        <a href="#contact">Contact</a>
+        <a href="#quiz">Eco Quiz</a>
     </nav>
 
-    <section id="home">
-        <h2>Protect Our Environment</h2>
-        <p>
-            The environment gives us air, water, food, and shelter.
-            It is our responsibility to keep our planet clean and green.
-        </p>
-        <button onclick="showMessage()">Join the Green Movement</button>
-        <p id="message"></p>
+    <section id="home" class="hero">
+        <h2>Let's Make Earth Greener!</h2>
+        <p>Protect nature, reduce waste, save water, and build a better future.</p>
+        <a href="#tips" class="main-btn">Explore Eco Tips</a>
     </section>
 
     <section id="about">
-        <h2>Why Is the Environment Important?</h2>
+        <h2>Why Protect Our Environment?</h2>
         <p>
-            Trees, plants, animals, and clean water are essential
-            for life. Pollution and waste harm our planet.
-            Small steps can make a big difference.
+            Pollution, deforestation, and waste harm our planet.
+            Every person can help by adopting sustainable habits
+            and making eco-friendly choices.
         </p>
     </section>
 
     <section id="tips">
-        <h2>Simple Eco-Friendly Tips</h2>
+        <h2>🌱 Eco-Friendly Practices</h2>
 
-        <div class="tip">
-            <h3>🌱 Plant Trees</h3>
-            <p>Plant more trees to keep the air clean.</p>
-        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>🌳 Plant Trees</h3>
+                <p>Trees improve air quality and support wildlife.</p>
+            </div>
 
-        <div class="tip">
-            <h3>♻️ Reduce Waste</h3>
-            <p>Reuse items and recycle paper, plastic, and glass.</p>
-        </div>
+            <div class="card">
+                <h3>♻️ Manage Waste</h3>
+                <p>Reuse products and separate waste for recycling.</p>
+            </div>
 
-        <div class="tip">
-            <h3>💧 Save Water</h3>
-            <p>Turn off taps when water is not needed.</p>
-        </div>
+            <div class="card">
+                <h3>💧 Save Water</h3>
+                <p>Close taps properly and avoid wasting water.</p>
+            </div>
 
-        <div class="tip">
-            <h3>💡 Save Energy</h3>
-            <p>Switch off lights and fans when leaving a room.</p>
+            <div class="card">
+                <h3>⚡ Save Energy</h3>
+                <p>Switch off lights and fans when not needed.</p>
+            </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>Contact: gogreen@example.com</p>
-        <p>© 2026 Go Green | Keep Our Planet Clean</p>
+    <section id="action">
+        <h2>🌎 Take the Green Pledge</h2>
+        <p>Promise to take one small step towards a cleaner planet.</p>
+        <button id="pledgeBtn">I Promise!</button>
+        <p id="pledgeMessage">People taking the pledge: <span id="count">0</span></p>
+    </section>
+
+    <section id="quiz">
+        <h2>🧠 Test Your Eco Knowledge</h2>
+        <p>Which bin is generally used for recyclable paper?</p>
+
+        <select id="answer">
+            <option value="">Choose your answer</option>
+            <option value="green">Green bin</option>
+            <option value="blue">Blue bin</option>
+            <option value="red">Red bin</option>
+        </select>
+
+        <button id="checkBtn">Check Answer</button>
+        <p id="quizResult"></p>
+    </section>
+
+    <footer>
+        <p>🌿 EcoLife | Save Earth, Save Life</p>
+        <p>Made with HTML, CSS and JavaScript</p>
     </footer>
 
-    <script>
-        function showMessage() {
-            document.getElementById("message").innerHTML =
-                "Thank you! Together, we can make Earth greener! 🌿";
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
